@@ -27,7 +27,15 @@ namespace ConsoleApp4
             set {ReleaseDate = value; }
         }
         public bool z
+        {
             get { return IsApproved; }
-            set { =IsApproved true; }
-    }
+            set { IsApproved=value; }
+        }
+        public override string ToString()
+        {
+            string str="";
+            str += string.Format("EntryDate: {0}", EntryDate, "ReleaseDate:{1}", ReleaseDate);
+            return str;
+
+        }
 }
